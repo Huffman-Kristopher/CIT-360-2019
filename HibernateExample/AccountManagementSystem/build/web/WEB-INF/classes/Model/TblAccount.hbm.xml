@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 20, 2018 11:23:13 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.TblAccount" table="TBL_ACCOUNT" schema="APP" optimistic-lock="version">
+        <id name="accountId" type="int">
+            <column name="ACCOUNT_ID" precision="5" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="accountBalance" type="java.lang.Integer">
+            <column name="ACCOUNT_BALANCE" precision="5" scale="0" />
+        </property>
+        <property name="accountBeneficiary" type="string">
+            <column name="ACCOUNT_BENEFICIARY" length="30" />
+        </property>
+        <property name="accountType" type="string">
+            <column name="ACCOUNT_TYPE" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
