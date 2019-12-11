@@ -21,7 +21,7 @@ public class HttpConnectionExample {
     // HTTP GET request
     public void sendGet() throws Exception {
 
-	String url = "https://www.javatpoint.com/java-http-url-connection";
+	String url = "https://krishuffman.com";
 
 	URL obj = new URL(url);
 	HttpURLConnection con = (HttpURLConnection) obj.openConnection();
