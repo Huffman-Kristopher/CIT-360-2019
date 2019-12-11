@@ -177,4 +177,17 @@ public class CollectionsExample {
                 System.out.println(counter);
         }
     }   
+
+    TreeSet ts = new TreeSet();
+    	     
+	    // Add elements (animals) to the tree set
+	    ts.add("Fish");
+	    ts.add("Bird");
+	    ts.add("Tiger");
+	    ts.add("Dog");
+	    ts.add("Lion");
+	    ts.add("Cat");
+    		System.out.println(ts);
+    	   }
+    	}
 }
