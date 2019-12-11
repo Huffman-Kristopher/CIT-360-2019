@@ -50,4 +50,8 @@ public class HttpConnectionExample {
 	System.out.println(response.toString());
 
     }
+	catch(Exception e)
+        {
+            System.out.println("Exception caught: "+e);
+    }
 }
