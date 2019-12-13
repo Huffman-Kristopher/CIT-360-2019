@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CIT 360 App Page</title>
+    </head>
+<style>
+input[type=text] {
+    width: 25%;
+    Height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    width: 25%;
+    padding: 10px;
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+</style>
+   <body>
+       <h1>Character Input Page</h1>
+       <p>Enter your details to have it saved to the web server:</p>
+      <form action = "CharacterApplication" method = "GET">
+         First Name: <br><input type="text" name="firstName">
+         <br />
+         Last Name: <br><input type="text" name="lastName" />
+        <br />
+        Job: <br><input type="text" name="Job" />
+        <br />
+        Hair: <br><input type="text" name="Hair" />
+        <br />
+        Body: <br><input type="text" name="Body" />
+        <br />
+         <input type="submit" value="Submit" />
+      </form>
+   </body>
+</html>
