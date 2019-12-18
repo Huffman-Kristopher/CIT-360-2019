@@ -50,8 +50,13 @@ public class HttpConnectionExample {
 	System.out.println(response.toString());
 
     }
-	catch(Exception e)
-        {
-            System.out.println("Exception caught: "+e);
+	try{    
+	URL url=new URL("http://krishuffman.com");    
+		HttpURLConnection huc=(HttpURLConnection)url.openConnection();  
+			for(int i=1;i<=8;i++){  
+		System.out.println(huc.getHeaderFieldKey(i)+" = "+huc.getHeaderField(i));  
+}  
+		huc.disconnect();   
+}	catch(Exception e){System.out.println(e);} 
     }
 }
